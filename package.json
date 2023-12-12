@@ -2,13 +2,26 @@
   "name": "lite-vite",
   "type": "module",
   "engines": {
-    "node": "^18.0.0 || >=20.0.0"
+    "node": "^18.0.0 || >=20.0.0",
+    "pnpm": ">= 8.7.6"
   },
   "scripts": {
-    
+    "preinstall": "npx only-allow pnpm",
+    "dev": "pnpm -r --parallel --filter='./packages/*' run dev"
   },
-  "keywords": ["lite-vite"],
+  "keywords": [
+    "lite-vite"
+  ],
   "packageManager": "pnpm@8.7.6",
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "lite-vite": "workspace:*"
+  },
+  "pnpm": {
+    "overrides": {
+      "lite-vite": "workspace:*"
+    }
+  }
 }

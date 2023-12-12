@@ -1,0 +1,9 @@
+{
+  "name": "playground",
+  "scripts": {
+    "server": "lite-vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
