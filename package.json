@@ -1,0 +1,14 @@
+{
+  "name": "lite-vite",
+  "type": "module",
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "scripts": {
+    
+  },
+  "keywords": ["lite-vite"],
+  "packageManager": "pnpm@8.7.6",
+  "author": "",
+  "license": "ISC"
+}
